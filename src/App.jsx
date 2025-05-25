@@ -2,6 +2,7 @@ import { useState, useMemo } from "react";
 import { Plus } from "lucide-react";
 import Header from "./components/Header/Header";
 import SearchBar from "./components/SearchBar/SearchBar";
+import CampaignList from "./components/Campaigns/CampaignList";
 import "./App.css";
 
 import { INITIAL_CAMPAIGNS } from "./data/mockData";
@@ -27,8 +28,6 @@ function App() {
         );
     }, [campaigns, searchTerm]);
 
-    console.log(filteredCampaigns);
-
     return (
         <div className="app">
             <Header accountBalance={100} />
@@ -44,6 +43,12 @@ function App() {
                     <SearchBar
                         searchTerm={searchTerm}
                         onSearchChange={setSearchTerm}
+                    />
+                    <CampaignList
+                        campaigns={filteredCampaigns}
+                        isSearch={searchTerm.trim()}
+                        onEdit={(id) => console.log(`Edit campaign ${id}`)}
+                        onDelete={(id) => console.log(`Delete campaign ${id}`)}
                     />
                 </div>
             </main>
