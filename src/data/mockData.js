@@ -49,6 +49,36 @@ export const INITIAL_CAMPAIGNS = [
         town: "Poznan",
         radius: 10,
     },
+    {
+        id: 6,
+        name: "Black Friday Event",
+        keywords: ["advertising", "trade"],
+        bidAmount: 4.0,
+        campaignFund: 1000.0,
+        status: true,
+        town: "Lodz",
+        radius: 35,
+    },
+    {
+        id: 7,
+        name: "Back to School",
+        keywords: ["customer", "product"],
+        bidAmount: 2.8,
+        campaignFund: 600.0,
+        status: true,
+        town: "Szczecin",
+        radius: 28,
+    },
+    {
+        id: 8,
+        name: "Weekend Sale",
+        keywords: ["business", "shop"],
+        bidAmount: 1.9,
+        campaignFund: 400.0,
+        status: false,
+        town: "Lublin",
+        radius: 18,
+    },
 ];
 
 export const MOCK_TOWNS = [
