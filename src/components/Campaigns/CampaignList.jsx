@@ -21,7 +21,7 @@ const CampaignList = ({ campaigns, isSearch, onEdit, onDelete }) => {
                         key={campaign.id}
                         campaign={campaign}
                         onEdit={() => onEdit(campaign)}
-                        onDelete={onDelete}
+                        onDelete={() => onDelete(campaign.id)}
                     />
                 ))
             )}
