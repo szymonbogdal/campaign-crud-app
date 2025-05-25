@@ -78,13 +78,13 @@ function App() {
             <main className="main-content">
                 <div className="container">
                     <div className="content-header">
-                        <h2>Moje Kampanie</h2>
+                        <h2>My campaigns</h2>
                         <button
                             className="btn btn-primary"
                             onClick={() => setShowForm(true)}
                         >
                             <Plus size={20} />
-                            Dodaj kampanię
+                            Add campaign
                         </button>
                     </div>
                     <SearchBar
