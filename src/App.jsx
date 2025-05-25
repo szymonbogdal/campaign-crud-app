@@ -66,6 +66,12 @@ function App() {
         setEditingCampaign(null);
     };
 
+    const handleDeleteCampaign = (id) => {
+        const campaign = campaigns.find((c) => c.id === id);
+        setCampaigns(campaigns.filter((campaign) => campaign.id !== id));
+        setAccountBalance((prev) => prev + campaign.campaignFund);
+    };
+
     return (
         <div className="app">
             <Header accountBalance={accountBalance} />
@@ -89,7 +95,7 @@ function App() {
                         campaigns={filteredCampaigns}
                         isSearch={searchTerm.trim()}
                         onEdit={setEditingCampaign}
-                        onDelete={(id) => console.log(`Delete campaign ${id}`)}
+                        onDelete={handleDeleteCampaign}
                     />
                 </div>
             </main>

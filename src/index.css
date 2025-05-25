@@ -28,7 +28,7 @@ body {
 
 .btn-primary {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    color: #fff;
 }
 
 .btn-primary:hover {
@@ -39,6 +39,11 @@ body {
 .btn-secondary {
     background: #e2e8f0;
     color: #64748b;
+}
+
+.btn-danger {
+    background: #fee2e2;
+    color: #dc2626;
 }
 
 .btn-secondary:hover {
@@ -61,8 +66,8 @@ body {
 }
 
 .btn-danger:hover {
-    background: #fee2e2;
-    color: #dc2626;
+    background: #ef4444;
+    color: #fee2e2;
 }
 
 .modal-overlay {
@@ -92,4 +97,20 @@ body {
 .modal h2 {
     margin-bottom: 1.5rem;
     color: #1e293b;
+}
+
+.modal-overlay.delete-modal {
+    align-items: flex-start;
+    padding-top: 15vh;
+}
+
+.modal.delete-modal {
+    max-width: 450px;
+}
+
+.delete-modal-actions {
+    margin-top: 24px;
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
 }
