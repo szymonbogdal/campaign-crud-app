@@ -20,7 +20,7 @@ const CampaignList = ({ campaigns, isSearch, onEdit, onDelete }) => {
                     <CampaignCard
                         key={campaign.id}
                         campaign={campaign}
-                        onEdit={onEdit}
+                        onEdit={() => onEdit(campaign)}
                         onDelete={onDelete}
                     />
                 ))
