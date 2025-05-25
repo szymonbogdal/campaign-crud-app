@@ -20,3 +20,29 @@ export const INITIAL_CAMPAIGNS = [
         radius: 15,
     },
 ];
+
+export const MOCK_TOWNS = [
+    "Warszawa",
+    "Kraków",
+    "Gdańsk",
+    "Wrocław",
+    "Poznań",
+    "Łódź",
+    "Szczecin",
+    "Lublin",
+    "Katowice",
+    "Bydgoszcz",
+];
+
+export const MOCK_KEYWORDS = [
+    "marketing",
+    "reklama",
+    "sprzedaż",
+    "promocja",
+    "biznes",
+    "handel",
+    "sklep",
+    "produkt",
+    "usługa",
+    "klient",
+];
